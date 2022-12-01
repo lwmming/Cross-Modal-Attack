@@ -25,3 +25,13 @@ Then generated video adversarial examples will be saved in your_adv_path in 'npy
 python test_k400.py/test_ucf.py --gpu 0 --adv_path your_adv_path
 ```
 The ASRs on six video models will be presented in ./your_adv_path/top1_asr_all_models.json.
+
+# Acknowledgements
+This repo is based on [adversarial-attacks-pytorch](https://github.com/Harry24k/adversarial-attacks-pytorch) and [TT](https://github.com/zhipeng-wei/TT).
+Thanks to [@Harry24k](https://github.com/Harry24k) and [@zhipeng-wei](https://github.com/zhipeng-wei).
+
+# Contact
+```
+rkwang@buaa.edu.cn
+```
+Feel free to contact me! Any discussions and suggestions are welcome!
