@@ -12,7 +12,7 @@ import pickle
 #import cv2
 import math
 from gluoncv.torch.engine.config import get_cfg_defaults
-
+ 
 # config info
 # refer to https://cv.gluon.ai/model_zoo/action_recognition.html
 CONFIG_ROOT = './config/' # config paths
