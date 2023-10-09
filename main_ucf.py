@@ -101,10 +101,10 @@ if __name__ == '__main__':
     val_loader = torch.utils.data.DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, num_workers=9, pin_memory=True)
 
     # attacks methods
-    # ADAMTAP10 = torchattacks.ADAM_TAP(model_vgg16, eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) # baseline
-    ADAMTAP10 = torchattacks.ADAM_TAP11(model_res101, eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) # ours
-    # ADAMTAP10 = torchattacks.ADAM_TAP_M([model_res101,model_vgg16,model_alex,model_sqn], eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) #ens-baseline
-    # ADAMTAP10 = torchattacks.ADAM_TAP11_M([model_res101,model_vgg16,model_alex,model_sqn], eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) #ens-ours
+    # ADAMTAP10 = torchattacks.I2V(model_vgg16, eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) # baseline
+    ADAMTAP10 = torchattacks.GIE(model_res101, eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) # ours
+    # ADAMTAP10 = torchattacks.I2V_ENS([model_res101,model_vgg16,model_alex,model_sqn], eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) #ens-baseline
+    # ADAMTAP10 = torchattacks.GIE_ENS([model_res101,model_vgg16,model_alex,model_sqn], eps=16.0/255, alpha=0.005, steps=60, momentum=1.0) #ens-ours
 
     attacks = [ADAMTAP10]
 
