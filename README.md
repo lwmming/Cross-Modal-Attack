@@ -16,7 +16,7 @@ We use six pretrained video recognition models on UCF101 and Kinetics-400. You c
 
 # Training
 ```
-python main_k400.py/main_ucf.py --batchsize 1 --gpu 0 --adv_path your_adv_path
+python main_k400.py/main_ucf.py --batch_size 1 --gpu 0 --adv_path your_adv_path
 ```
 Then generated video adversarial examples will be saved in your_adv_path in 'npy' format.
 
