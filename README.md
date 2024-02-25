@@ -1,5 +1,5 @@
 # Cross-Modal-Attack
-Code for the AAAI 2023 paper: "Global-Local Characteristic Excited Cross-Modal Attacks from Images to Video" (accepted).
+Code for the AAAI 2023 paper: "[Global-Local Characteristic Excited Cross-Modal Attacks from Images to Video](https://ojs.aaai.org/index.php/AAAI/article/view/25362)" (accepted).
 
 # Environments
 - python 3.7.6
